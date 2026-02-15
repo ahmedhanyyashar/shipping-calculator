@@ -1,4 +1,6 @@
 import { Box, Typography } from "@mui/material";
+import { QuoteProvider } from "./context/QuoteContext";
+import ShippingCalculator from "./pages/ShippingCalculator";
 
 export default function App() {
   return (
@@ -16,15 +18,11 @@ export default function App() {
         Compare shipping rates across multiple couriers in seconds and choose
         the best option for your business
       </Typography>
-      <Typography
-        variant="h5"
-        sx={{ mt: 2 }}
-        color="text.secondary"
-      >
-        Compare shipping rates across multiple couriers in
-        seconds and choose the best option for your business
-      </Typography>
-      <Box component="main"></Box>
+      <Box component="main" sx={{ py: 4 }}>
+        <QuoteProvider>
+          <ShippingCalculator />
+        </QuoteProvider>
+      </Box>
     </Box>
   );
 }
