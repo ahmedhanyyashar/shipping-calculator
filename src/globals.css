@@ -1,0 +1,13 @@
+#root,
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+html {
+  font-size: 62.5%; 
+  overflow-x: hidden;
+}

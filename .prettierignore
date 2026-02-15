@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Production builds
+dist
+build
+coverage
+
+# Generated files
+generated/*
+
+# Package files
+pnpm-lock.yaml
+package-lock.json
+
+# IDE
+.vscode
+.idea
+
+# Misc
+*.log
+.DS_Store
